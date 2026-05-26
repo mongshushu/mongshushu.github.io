@@ -1,21 +1,45 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 ---
 
-<html lang="ko">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Posts | Minjoo's Home</title>
-	</head>
-	<body>
-		<main>
-			<p>Posts</p>
-			<h1>글 목록 페이지</h1>
-			<p>
-				생각, 배운 것, 기록처럼 글 중심 콘텐츠를 모아 보여줄 공간입니다.
-			</p>
-		</main>
-	</body>
-</html>
+<BaseLayout title="Posts | Minjoo's Home">
+	<section class="page-section">
+		<p class="eyebrow">Posts</p>
+		<h1>글 목록 페이지</h1>
+		<p>
+			생각, 배운 것, 기록처럼 글 중심 콘텐츠를 모아 보여줄 공간입니다.
+		</p>
+	</section>
+</BaseLayout>
+
+<style>
+	.page-section {
+		max-width: 760px;
+	}
+
+	.eyebrow {
+		margin: 0 0 16px;
+		color: #767676;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: clamp(40px, 6vw, 72px);
+		line-height: 1.1;
+		letter-spacing: 0;
+		word-break: keep-all;
+	}
+
+	p {
+		margin: 24px 0 0;
+		color: #555555;
+		font-size: 18px;
+		line-height: 1.8;
+		word-break: keep-all;
+	}
+</style>
