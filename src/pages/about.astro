@@ -6,10 +6,42 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout title="About | Minjoo's Home">
 	<section class="page-section">
 		<p class="eyebrow">About</p>
-		<h1>소개 페이지</h1>
+		<h1>구현 방법을 같이 고민하는 디자이너입니다.</h1>
 		<p>
-			개인이나 회사 소개처럼 다양한 내용을 하나의 흐름으로 이어서 설명하는
-			공간입니다.
+			디자인을 중심으로 배우고 있습니다. 아이디어가 보기 좋은 화면에서 끝나지
+			않고, 실제로 어떻게 만들어질 수 있는지도 함께 고민하고 있습니다.
+		</p>
+	</section>
+
+	<section class="page-section">
+		<h2>배경</h2>
+		<p>
+			국민대학교에서 회화를 전공하고 사회심리를 부전공했습니다. 지금은 Apple
+			Academy Cohort 2026에서 Swift와 앱 개발 과정을 배우고 있습니다.
+		</p>
+	</section>
+
+	<section class="page-section">
+		<h2>관심 있는 것</h2>
+		<p>
+			현재 가장 관심 있는 분야는 디자인입니다. 화면의 모양뿐 아니라, 사람이
+			내용을 어떻게 이해하고 사용하는지도 함께 보고 싶습니다.
+		</p>
+	</section>
+
+	<section class="page-section">
+		<h2>해본 일과 배우는 중인 것</h2>
+		<p>
+			'tape off' 전시를 기획한 경험이 있습니다. 지금은 Swift를 배우며, 생각한
+			것을 작은 화면과 기능으로 만들어보는 연습을 하고 있습니다.
+		</p>
+	</section>
+
+	<section class="page-section">
+		<h2>앞으로 해보고 싶은 것</h2>
+		<p>
+			앞으로는 게임 개발을 해보고 싶습니다. 디자인과 상호작용을 함께 다루는
+			방식을 천천히 탐색해보려 합니다.
 		</p>
 	</section>
 </BaseLayout>
@@ -17,6 +49,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <style>
 	.page-section {
 		max-width: 760px;
+		margin-bottom: 56px;
+	}
+
+	.page-section:last-child {
+		margin-bottom: 0;
 	}
 
 	.eyebrow {
@@ -32,6 +69,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		margin: 0;
 		font-size: clamp(40px, 6vw, 72px);
 		line-height: 1.1;
+		letter-spacing: 0;
+		word-break: keep-all;
+	}
+
+	h2 {
+		margin: 0;
+		font-size: clamp(28px, 4vw, 40px);
+		line-height: 1.2;
 		letter-spacing: 0;
 		word-break: keep-all;
 	}

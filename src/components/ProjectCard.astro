@@ -1,0 +1,84 @@
+---
+const { project } = Astro.props;
+const projectUrl = `/projects/${project.slug}`;
+---
+
+<article class="project-card">
+	<a href={projectUrl}>
+		<div class="card-header">
+			<p>{project.title}</p>
+			<h2>{project.description}</h2>
+		</div>
+
+		<dl>
+			<div>
+				<dt>역할</dt>
+				<dd>{project.role}</dd>
+			</div>
+			<div>
+				<dt>도구</dt>
+				<dd>{project.tools.join(', ')}</dd>
+			</div>
+			<div>
+				<dt>결과</dt>
+				<dd>{project.result}</dd>
+			</div>
+		</dl>
+	</a>
+</article>
+
+<style>
+	.project-card {
+		border: 1px solid #e7e7e7;
+		border-radius: 8px;
+	}
+
+	.project-card a {
+		display: block;
+		height: 100%;
+		padding: 24px;
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.project-card:hover {
+		border-color: #bdbdbd;
+	}
+
+	.card-header p {
+		margin: 0 0 12px;
+		color: #767676;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0;
+	}
+
+	h2 {
+		margin: 0;
+		font-size: 24px;
+		line-height: 1.3;
+		letter-spacing: 0;
+		word-break: keep-all;
+	}
+
+	dl {
+		display: grid;
+		gap: 18px;
+		margin: 28px 0 0;
+	}
+
+	dt {
+		margin: 0 0 6px;
+		color: #767676;
+		font-size: 13px;
+		font-weight: 700;
+	}
+
+	dd {
+		margin: 0;
+		color: #444444;
+		font-size: 16px;
+		line-height: 1.7;
+		word-break: keep-all;
+	}
+</style>

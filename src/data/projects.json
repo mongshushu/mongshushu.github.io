@@ -1,0 +1,29 @@
+[
+	{
+		"title": "C1",
+		"description": "개발 문화 친숙해지기",
+		"role": "내용정리",
+		"tools": ["Xcode", "SwiftUI"],
+		"result": "포항 시민이 되어버린 러너를 위해 정보를 차근차근 제공해주는 앱",
+		"detail": "전반적으로 CBL 플로우워크를 활용했다. 문제정의에서부터 시작해 앱의 컨셉을 정한다. 이후 백지에서부터 앱 구현을 시작했다. 그 과정에서 여러 사람들과 의견을 조율하는 방법을 배웠다.",
+		"slug": "project-one"
+	},
+	{
+		"title": "C2",
+		"description": "C1 프로젝트 업그레이드. 개인 프로젝트",
+		"role": "팀의 전반적인 진행상황 체크 및 동기부여",
+		"tools": ["Xcode", "SwiftUI", "Foundation"],
+		"result": "CRUD 시스템 구현 및 추가 리파이닝 개발",
+		"detail": "hi-fi 작업을 Sketch 프로그램으로 작업 후 편집된 사항을 코딩 과정에서 반영했다. 하드코딩된 정보를 변환하고, 조건에 따라 정보를 분류하여 카드 형태로 view에 불러오는 시스템을 구현했다.",
+		"slug": "project-two"
+	},
+	{
+		"title": "C3",
+		"description": "입력",
+		"role": "컨셉 제시, 개발 테스트, 디자인 및 그래픽 작업",
+		"tools": ["Xcode", "SwiftUI", "Graphics-RealityKit", "Blender"],
+		"result": "인터렉티브 감정 기록 일기 앱",
+		"detail": "개고생중",
+		"slug": "project-three"
+	}
+]
